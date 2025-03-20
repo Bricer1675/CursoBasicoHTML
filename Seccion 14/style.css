@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(159, 176, 159);
+}
+
+header {
+    background-color: rgb(63, 165, 63);
+    
+}
+main{
+    padding: 2em
+}
+button {
+    padding: 0.5em 1em;
+    background-color: rgb(79, 97, 73);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(41, 228, 47);
+}
+footer {
+    background-color: rgb(9, 134, 145);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
