@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Dinámica</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al CSS -->
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li>
+                    <a href="#">Galería</a>
+                    <ul class="submenu">
+                        <li><a href="#img1">Imagen 1</a></li>
+                        <li><a href="#img2">Imagen 2</a></li>
+                        <li><a href="#img3">Imagen 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Sexo</a>
+                    <ul class="submenu">
+                        <li><a href="#" onclick="mostrarFormulario('hombre')">Hombre</a></li>
+                        <li><a href="#" onclick="mostrarFormulario('mujer')">Mujer</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Formularios ocultos -->
+    <section id="formulario-hombre" class="formulario oculto">
+        <h2>Formulario para Hombres</h2>
+        <form>
+            <label for="nombre-h">Nombre:</label>
+            <input type="text" id="nombre-h" name="nombre-h">
+            <label for="edad-h">Edad:</label>
+            <input type="number" id="edad-h" name="edad-h">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="formulario-mujer" class="formulario oculto derecha">
+        <h2>Formulario para Mujeres</h2>
+        <form>
+            <label for="nombre-m">Nombre:</label>
+            <input type="text" id="nombre-m" name="nombre-m">
+            <label for="edad-m">Edad:</label>
+            <input type="number" id="edad-m" name="edad-m">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script> <!-- Enlace al JavaScript -->
+</body>
+</html>
